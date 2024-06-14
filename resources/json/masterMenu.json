@@ -1,114 +1,130 @@
 {
-  "menu": [
-
-    {
-        "menuHeader": "Data Master",
-        "slug" : "master-data"
-    },
-    {
-        "url": "admin/pengguna",
-        "name": "Pengguna",
-        "icon": "menu-icon tf-icons bx bxs-user",
-        "slug": "pengguna"
-    },
-      {
-          "menuHeader": "ESG Dashboard",
-          "slug" : "master-data"
-      },
-      {
-          "name": "Set Up",
-          "icon": "menu-icon tf-icons bx bxs-coin-stack",
-          "slug" : ["company-profile","industry-benchmark","periode-timeframe", "sustainability-governance-structure","sustainability-strategy","stakeholder-mapping","maretial-topic-identification","goals-target","metric-definitions-setting"],
-          "submenu": [
-              {
-                  "url" : "admin/company-profile",
-                  "name" : "Company Profile",
-                  "slug" : "company-profile"
-              },
-              {
-                  "url" : "admin/industry-benchmark",
-                  "name" : "Industry & Benchmark",
-                  "slug" : "industry-benchmark"
-              },
-              {
-                  "url" : "admin/periode-timeframe",
-                  "name" : "Periode & Timeframe",
-                  "slug" : "periode-timeframe"
-              },
-              {
-                  "url" : "admin/sustainability-governance-structure",
-                  "name" : "Sustainability Governance Structure",
-                  "slug" : "sustainability-governance-structure"
-              },
-              {
-                  "url" : "admin/sustainability-strategy",
-                  "name" : "Sustainability Strategy",
-                  "slug" : "sustainability-strategy"
-              },
-              {
-                  "url" : "admin/stakeholder-mapping",
-                  "name" : "Stakeholder Mapping",
-                  "slug" : "stakeholder-mapping"
-              },
-              {
-                  "url" : "admin/maretial-topic-identification",
-                  "name" : "Maretial Topic Identification",
-                  "slug" : "maretial-topic-identification"
-              },
-              {
-                  "url" : "admin/goals-target",
-                  "name" : "Goals & Target",
-                  "slug" : "goals-target"
-              },
-              {
-                  "url" : "admin/metric-definitions-setting",
-                  "name" : "Metric Definitions and Setting",
-                  "slug" : "metric-definitions-setting"
-              }
-              
-          ]
-      },
-      {
-        "name": "Dashboard",
-        "icon": "menu-icon tf-icons bx bxs-bar-chart-alt-2",
-        "slug" : ["all-performance","environmental-performance","social-performance","governance-performance","selected-performance","sdgs"],
-        "submenu": [
-            {
-                "url" : "dashboard/all-performance",
-                "name" : "All Performance",
-                "slug" : "all-performance"
-            },
-            {
-                "url" : "dashboard/environmental-performance",
-                "name" : "Environmental",
-                "slug" : "environmental-performance"
-            },
-            {
-                "url" : "dashboard/social-performance",
-                "name" : "Social",
-                "slug" : "social-performance"
-            },
-            {
-                "url" : "dashboard/governance-performance",
-                "name" : "Governance",
-                "slug" : "governance-performance"
-            },
-            {
-                "url" : "dashboard/selected-performance",
-                "name" : "Selected Performance",
-                "slug" : "selected-performance"
-            },
-            {
-                "url" : "dashboard/sdgs",
-                "name" : "SDGs",
-                "slug" : "sdgs"
-            }
-        ]
-    }
-      
-      
-     
-
-
-  ]
+    "menu": [
+        {
+            "menuHeader": "Data Master",
+            "slug": "master-data"
+        },
+        {
+            "url": "admin/pengguna",
+            "name": "Pengguna",
+            "icon": "menu-icon tf-icons bx bxs-user",
+            "slug": "pengguna"
+        },
+        {
+            "url": "esg/create",
+            "name": "Buat ESG",
+            "icon": "menu-icon tf-icons bx bxs-coin-stack",
+            "slug": "create"
+        },
+        {
+            "menuHeader": "ESG Dashboard",
+            "slug": "master-data"
+        },
+        {
+            "name": "Set Up",
+            "icon": "menu-icon tf-icons bx bxs-coin-stack",
+            "slug": [
+                "company-profile",
+                "industry-benchmark",
+                "periode-timeframe",
+                "sustainability-governance-structure",
+                "sustainability-strategy",
+                "stakeholder-mapping",
+                "maretial-topic-identification",
+                "goals-target",
+                "metric-definitions-setting"
+            ],
+            "submenu": [
+                {
+                    "url": "admin/company-profile",
+                    "name": "Company Profile",
+                    "slug": "company-profile"
+                },
+                {
+                    "url": "admin/industry-benchmark",
+                    "name": "Industry & Benchmark",
+                    "slug": "industry-benchmark"
+                },
+                {
+                    "url": "admin/periode-timeframe",
+                    "name": "Periode & Timeframe",
+                    "slug": "periode-timeframe"
+                },
+                {
+                    "url": "admin/sustainability-governance-structure",
+                    "name": "Sustainability Governance Structure",
+                    "slug": "sustainability-governance-structure"
+                },
+                {
+                    "url": "admin/sustainability-strategy",
+                    "name": "Sustainability Strategy",
+                    "slug": "sustainability-strategy"
+                },
+                {
+                    "url": "admin/stakeholder-mapping",
+                    "name": "Stakeholder Mapping",
+                    "slug": "stakeholder-mapping"
+                },
+                {
+                    "url": "admin/maretial-topic-identification",
+                    "name": "Maretial Topic Identification",
+                    "slug": "maretial-topic-identification"
+                },
+                {
+                    "url": "admin/goals-target",
+                    "name": "Goals & Target",
+                    "slug": "goals-target"
+                },
+                {
+                    "url": "admin/metric-definitions-setting",
+                    "name": "Metric Definitions and Setting",
+                    "slug": "metric-definitions-setting"
+                }
+            ]
+        },
+        {
+            "name": "Dashboard",
+            "icon": "menu-icon tf-icons bx bxs-bar-chart-alt-2",
+            "slug": [
+                "all-performance",
+                "environmental-performance",
+                "social-performance",
+                "governance-performance",
+                "selected-performance",
+                "sdgs"
+            ],
+            "submenu": [
+                {
+                    "url": "dashboard/all-performance",
+                    "name": "All Performance",
+                    "slug": "all-performance"
+                },
+                {
+                    "url": "dashboard/environmental-performance",
+                    "name": "Environmental",
+                    "slug": "environmental-performance"
+                },
+                {
+                    "url": "dashboard/social-performance",
+                    "name": "Social",
+                    "slug": "social-performance"
+                },
+                {
+                    "url": "dashboard/governance-performance",
+                    "name": "Governance",
+                    "slug": "governance-performance"
+                },
+                {
+                    "url": "dashboard/selected-performance",
+                    "name": "Selected Performance",
+                    "slug": "selected-performance"
+                },
+                {
+                    "url": "dashboard/sdgs",
+                    "name": "SDGs",
+                    "slug": "sdgs"
+                }
+            ]
+        }
+    ]
 }
