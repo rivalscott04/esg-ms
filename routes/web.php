@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\Dashboard\AllPerformanceController;
-use App\Http\Controllers\Dashboard\EnviromentalPerformanceController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ESGController;
+use App\Http\Controllers\Dashboard\AllPerformanceController;
+use App\Http\Controllers\Dashboard\EnviromentalPerformanceController;
 
 Route::redirect('/', '/login');
 //BACKEND
@@ -25,6 +26,10 @@ Route::group(["middleware" => 'auth', "prefix" => "admin", "as" => "admin."], fu
 });
 
 Route::group(["middleware" => 'auth'], function () {
+    //ESG
+    Route::get('/esg/create', [ESGController::class, 'create'])->name('esg.create');
+    Route::post('/esg/store', [ESGController::class, 'store'])->name('esg.store');
+
     //DASHBOARD
     Route::group(["prefix" => "dashboard", "as" => "dashboard."], function () {
         //ALL PRFORMANCE
